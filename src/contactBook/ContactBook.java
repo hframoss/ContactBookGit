@@ -67,9 +67,9 @@ public class ContactBook {
         contacts[searchIndex(name)].setEmail(email);
     }
 
-    public boolean equalphone() {
+    public boolean equalPhone() {
         for (int i = 0; i<counter; i++) {
-            for (int j = 0; i < counter; j++) {
+            for (int j = 0; j < counter; j++) {
                 if (contacts[i].getPhone() == contacts[j].getPhone() && i != j) {
                     return true;
                 }
