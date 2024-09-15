@@ -26,6 +26,7 @@ public class Main {
     public static final String BOOK_EMPTY = "contactBook.Contact book empty.";
     public static final String NUMBER_NOT_EXIST = "Phone number does not exist.";
     public static final String NUMBER_SHARED = "There are contacts that share phone numbers.";
+    public static final String NUMBER_NOT_SHARED = "All contacts have different phone numbers";
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
 
@@ -170,7 +171,12 @@ public class Main {
         }
     }
 
-    private static void equalPhone(Scanner in, ContactBook cBook) {
-
+    private static void equalPhone(ContactBook cBook) {
+        if (cBook.equalphone()) {
+            System.out.println(NUMBER_SHARED);
+        }
+        else {
+            System.out.println(NUMBER_NOT_SHARED);
+        }
     }
 }
