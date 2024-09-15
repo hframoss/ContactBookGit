@@ -62,7 +62,7 @@ public class Main {
                     givenNumber(in,cBook);
                     break;
                 case EQUAL_PHONE:
-                    equalPhone(in, cBook);
+                    equalPhone(cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
